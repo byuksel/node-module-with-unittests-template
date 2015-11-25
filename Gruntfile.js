@@ -71,12 +71,7 @@ module.exports = function(grunt) {
     },
     // Start the basic web server from connect.
     connect: {
-      server: {},
-      keepalive: {
-        options: {
-          keepalive: true
-        }
-      }
+      server: {}
     },
     jsdoc: {
       all: {
@@ -160,9 +155,9 @@ module.exports = function(grunt) {
           patterns: [
             {
               json: {
-                '_un_minimized_file_': '<%= browserify.standalone.output_file %>',
-                '_minimized_file_': '<%= uglify.all.output_file %>',
-                '_pkg_version_': '<%= pkg.version %>'
+                'unminimized_file': '<%= projectparams.output_file %>',
+                'minimized_file': '<%= projectparams.minimized_output_file %>',
+                'pkg_version': '<%= pkg.version %>'
               }
             }
           ]
@@ -216,7 +211,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-replace');
   // Aliases
-  grunt.registerTask('browsertest', ['clean:tests', 'jshint', 'browserify', 'replace:browserified_tests_file', 'connect:server', 'mocha_phantomjs']);
+  grunt.registerTask('browsertest', ['clean:tests', 'jshint', 'browserify', 'replace:browserified_tests_file', 'connect', 'mocha_phantomjs']);
   grunt.registerTask('dist', ['clean:dist', 'browserify', 'uglify']);
   grunt.registerTask('docs', ['clean:docs', 'replace:dist', 'markdown', 'jsdoc']);
   grunt.registerTask('localtest', ['clean:tests', 'jshint', 'mochaTest']);
