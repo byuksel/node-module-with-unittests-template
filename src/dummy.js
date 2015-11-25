@@ -12,7 +12,7 @@ exports = module.exports = Dummy;
  * Constructs a new Dummy class
  * @constructor
  */
-function Dummy() {};
+function Dummy() {}
 
 /**
  * Say hello!

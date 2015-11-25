@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       readme_md_text_file: './README.md',
       readme_md_html_file: './README.md.html',
       // Directories that already exist
-      src_dir: './lib/',
+      src_dir: './src/',
       test_dir: './test/',
       unittests_dir: './test/unittests/',
       docs_dir: './docs/',
