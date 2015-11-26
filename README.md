@@ -27,18 +27,26 @@ This copy will not be deleted unless you delete it yourself.
 
 ## Scaffolding Explained ##
 
-In this section, we describe what each file does in this template and how you can modify them to your
-needs.
+In this section, we describe what each file does in this template and how you can modify them to your needs.
 
-### ./package.json ###
+<div style='padding: 20px'>
 
-NPM package.json file. You describe your module in this file. The values for 'name' and 'version' from
-this file are later used in producing README.md file.
+### ./Gruntfile.js ###
+
+This is where all the magic lives. Gruntfile.js describes all the tasks, and how they interact
+with each other. It can run your tests, create browser version of your tests, run them in
+the browser, create their coverage reports, create documentation, create your dynamically
+generated README.md, and README.md.html files and create your final browserified library along
+with its minimized version.
 
 ### ./jsdoc.conf ###
 
 JSDoc configuration file. You can modify this file to change the behaviour of JSDoc which is used to create
 documentation from the source code.
+
+### ./package.json ###
+
+NPM package.json file. You describe your module in this file. The values for 'name' and 'version' fromthis file are later used in producing README.md file.
 
 ### ./README.md.template ###
 
@@ -68,21 +76,17 @@ This file is processed by "replace:browserified_tests_file" task to produce an i
 index.html.template to produce the final index.html file. This 'index.html' file is then used
 by "mocha_phantomjs:all" task to run the browserified unittests.
 
-### ./Gruntfile.js ###
-
-This is where all the magic lives. Gruntfile.js describes all the tasks, and how they interact
-with each other. It can run your tests, create browser version of your tests, run them in
-the browser, create their coverage reports, create documentation, create your dynamically
-generated README.md, and README.md.html files and create your final browserified library along
-with its minimized version.
+</div>
 
 ## ./Gruntfile.js and Tasks ##
 
+<div style='padding:20px'>
+
+### browserify ###
+
+Browserifies the library so that your library can run in a browser.
+
 ### clean ###
-
-#### clean:tests ####
-
-Deletes the output of tests and browserified tests.
 
 #### clean:dist ####
 
@@ -92,49 +96,51 @@ Deletes the minimized and unminimized final output files.
 
 Deletes the docs.
 
-### jshint ###
+#### clean:tests ####
 
-Runs the code through jshint.
+Deletes the output of tests and browserified tests.
 
 ### connect ###
 
 Starts a basic web server.
 
-### replace ###
+### jsdoc ###
 
-Replaces text patterns in (template) files.
+Creates documentation from src files using jsdoc.
 
-#### replace:dist ####
+### jshint ###
 
-Replaces text patterns in README.md.template.
-
-#### replace:browserified_test_file ####
-
-Replaces text patterns in the index.html.template.
-
-### mocha_phantomjs ###
-
-Runs the browserified tests thru PhantomJS.
+Runs the code through jshint.
 
 ### markdown ###
 
 Creates an html version of the README.md file called README.md.html.
 
+### mocha_phantomjs ###
+
+Runs the browserified tests thru PhantomJS.
+
 ### mochaTest ###
 
 Runs the unittests.
 
-### jsdoc ###
+### replace ###
 
-Creates documentation from src files using jsdoc.
+Replaces text patterns in (template) files.
+
+#### replace:browserified_test_file ####
+
+Replaces text patterns in the index.html.template.
+
+#### replace:dist ####
+
+Replaces text patterns in README.md.template.
 
 ### uglify ###
 
 Minimizes the output of browserified library/module.
 
-### browserify ###
-
-Browserifies the library so that your library can run in a browser.
+</div>
 
 ## Custom Tasks ##
 
