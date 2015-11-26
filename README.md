@@ -28,7 +28,7 @@ This copy will not be deleted unless you delete it yourself.
 ## Scaffolding Explained ##
 
 In this section, we describe what each file does in this template and how you can modify them to your needs.
-<div style="padding-left: 20px">
+
 ### ./Gruntfile.js ###
 
 This is where all the magic lives. Gruntfile.js describes all the tasks, and how they interact
@@ -73,7 +73,7 @@ This file is processed by "replace:browserified_tests_file" task to produce an i
 "replace:browserified_tests_file" task writes the location of your browserified unittests into the
 index.html.template to produce the final index.html file. This 'index.html' file is then used
 by "mocha_phantomjs:all" task to run the browserified unittests.
-</div>
+
 ## ./Gruntfile.js and Tasks ##
 
 Gruntfile.js tasks are closely coupled. Please be careful when you change them.
