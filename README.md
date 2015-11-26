@@ -9,7 +9,7 @@ module/library name and version in README.md, and an html version of your README
 
 ## Quick Installation ##
 
-After cloning this scaffolding from github, jut type `npm install` and this scaffolding will install
+After cloning this scaffolding from github, just type `npm install` and this scaffolding will install
 all the necessary dependencies.
 
 ## Quick Start ##
@@ -187,16 +187,16 @@ Test results from the browser run of the browserified unittests.
 
 #### ./test/output/coveragereport.html ####
 
-This is an important file. It tells you how much your unittests cover your code. I recommend
+This is an important file. It tells you how much your unittests cover your code. I recommend you
 to have full coverage at >98% as it will help you to catch bugs early on.
 
 #### ./test/output/output.txt ####
 
 Test results from the node run of the unittests.
 
-## projectparams section of Gruntfile.js ##
+## 'projectparams' section of Gruntfile.js ##
 
-This section has all the parameters necessary to run the scaffolding correctly.
+This section has all the parameters necessary to run the scaffolding correctly. You can change these parameters according to your project's specifics.
 
 Description of the variables in projectparams:
 

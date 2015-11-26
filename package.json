@@ -1,5 +1,5 @@
 {
-  "name": "dummy",
+  "name": "node-module-with-unittests-template",
   "version": "0.0.1",
   "description": "DummyJS: a near-empty template for a generic node module with unittests",
   "keywords": [
