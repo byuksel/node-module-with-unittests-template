@@ -1,26 +1,20 @@
 {
   "name": "node-module-with-unittests-template",
   "version": "0.0.1",
-  "description": "DummyJS: a near-empty template for a generic node module with unittests",
+  "description": "Node-Module-With-Unittests-Template: template for a generic node module with unittests",
   "keywords": [
     "template",
     "node module",
     "node module template"
   ],
   "homepage": "http://www.dummy-homepage.com",
-  "author": {
-    "name": "Baris Yuksel",
-    "url": "http://barisyuksel.com"
-  },
+  "author": "Baris Yuksel (http://barisyuksel.com)",
   "contributors": [
-    {
-      "name": "Baris Yuksel",
-      "url": "http://barisyuksel.com"
-    }
+    "Baris Yuksel (http://barisyuksel.com)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/byuksel/dummyjs.git"
+    "url": "git+https://github.com/byuksel/dummyjs.git"
   },
   "devDependencies": {
     "blanket": "^1.2.0",
@@ -45,5 +39,38 @@
     "time-grunt": "*",
     "uglify-js": "^2.5.0"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/byuksel/dummyjs/issues"
+  },
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {
+    "blanket": "^1.2.1",
+    "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^1.0.0",
+    "grunt-markdown": "^0.7.0",
+    "grunt-mocha-phantomjs": "^2.0.1",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-replace": "^0.11.0",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "time-grunt": "^1.2.2",
+    "jsdoc": "^3.4.0",
+    "raphael": "^2.1.4",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }
