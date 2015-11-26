@@ -29,7 +29,7 @@ This copy will not be deleted unless you delete it yourself.
 
 In this section, we describe what each file does in this template and how you can modify them to your needs.
 
-### ./Gruntfile.js ###
+#### ./Gruntfile.js ####
 
 This is where all the magic lives. Gruntfile.js describes all the tasks, and how they interact
 with each other. It can run your tests, create browser version of your tests, run them in
@@ -37,37 +37,37 @@ the browser, create their coverage reports, create documentation, create your dy
 generated README.md, and README.md.html files and create your final browserified library along
 with its minimized version.
 
-### ./jsdoc.conf ###
+#### ./jsdoc.conf ####
 
 JSDoc configuration file. You can modify this file to change the behaviour of JSDoc which is used to create
 documentation from the source code.
 
-### ./package.json ###
+#### ./package.json ####
 
 NPM package.json file. You describe your module in this file. The values for 'name' and 'version' fromthis file are later used in producing README.md file.
 
-### ./README.md.template ###
+#### ./README.md.template ####
 
 This is "almost" your README.md file except you can replace text patterns dynamically during Grunt run.
 In Grunt.js file, there is a step/task called "replace:dist" which will take this README.md.template,
 replace text patterns you identify in the task with their produced values, and produce the README.md file.
 This lets you for example dynamically add the version number to README.md file.
 
-### ./src/dummy.js ###
+#### ./src/dummy.js ####
 
 This file is an example for the entry point of your library/module. You can replace it with your own module
 js file(s). The Grunt.js file assumes that the entry point file to your library will be the same as the name
 of your module. So, if your library is called 'dummy' in package.json, your entry point file should be named
 dummy.js.
 
-### ./test/unittests/dummy-test.js ###
+#### ./test/unittests/dummy-test.js ####
 
 You can add multiple test files to ./test/unittests/ directory. You probably want to have as many test files
 under this directory as your source js file under ./src directory. In other words, you want to have one to one
 mapping to your src files. I suggest for good housekeeping, every single file here should test one and only
 one js file under ./src.
 
-### ./test/index.html.template ###
+#### ./test/index.html.template ####
 
 This file is processed by "replace:browserified_tests_file" task to produce an index.html file.
 "replace:browserified_tests_file" task writes the location of your browserified unittests into the
