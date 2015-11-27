@@ -218,3 +218,7 @@ Description of the variables in projectparams:
 * **unittests_dir:** Directory where the unittests are.
 * **unittests_output_dir:** (Generated) Unittest output reports will be written here.
 * **unittests_text_output_file:** (Generated) Node unittest run reports.
+
+# Bugs, Requests and Support #
+
+For bug reports, feature requests and general questions, please feel free to email baris@onehundredyearsofcode.com.

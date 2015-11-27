@@ -16,4 +16,14 @@ var Dummy = require('./dummy.js');
  * Constructs a new empty class
  * @constructor
  */
-function NodeModuleWithUnittestsTemplate() {}
+function NodeModuleWithUnittestsTemplate() {
+  this.dummyClass = new Dummy();
+}
+
+/**
+ * Simple function
+ * @returns {String} returns what sayHello() returns from Dummy.js.
+ */
+NodeModuleWithUnittestsTemplate.prototype.hello = function() {
+  return this.dummyClass.sayhello();
+};

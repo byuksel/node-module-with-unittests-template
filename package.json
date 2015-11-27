@@ -1,11 +1,12 @@
 {
   "name": "node-module-with-unittests-template",
-  "version": "0.0.1",
-  "description": "Node-Module-With-Unittests-Template: template for a generic node module with unittests",
+  "version": "0.0.3",
+  "description": "Node-Module-With-Unittests-Template: template for a generic node module with unittests and coverage reports",
   "keywords": [
     "template",
     "node module",
-    "node module template"
+    "node module template",
+    "unittests"
   ],
   "homepage": "http://www.dummy-homepage.com",
   "author": "Baris Yuksel (http://barisyuksel.com)",
@@ -14,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/byuksel/dummyjs.git"
+    "url": "https://github.com/byuksel/node-module-with-unittests-template.git"
   },
   "devDependencies": {
     "blanket": "^1.2.0",
@@ -33,7 +34,6 @@
     "grunt-replace": "^0.11.0",
     "jsdoc": "^3.3.2",
     "mocha": "^2.2.5",
-    "raphael": "2.1.4",
     "sinon": "^1.15.3",
     "sinon-chai": "^2.8.0",
     "time-grunt": "*",
@@ -41,13 +41,9 @@
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/byuksel/dummyjs/issues"
+    "url": "https://github.com/byuksel/node-module-with-unittests-template/issues"
   },
-  "main": "Gruntfile.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
+  "main": "src/node-module-with-unittests-template.js",
   "dependencies": {
     "blanket": "^1.2.1",
     "chai": "^3.4.1",
@@ -63,14 +59,11 @@
     "grunt-mocha-phantomjs": "^2.0.1",
     "grunt-mocha-test": "^0.12.7",
     "grunt-replace": "^0.11.0",
+    "jsdoc": "^3.4.0",
+    "mocha": "^2.2.5",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "time-grunt": "^1.2.2",
-    "jsdoc": "^3.4.0",
-    "raphael": "^2.1.4",
     "uglify-js": "^2.6.1"
-  },
-  "scripts": {
-    "test": "mocha"
   }
 }

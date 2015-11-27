@@ -15,3 +15,27 @@ equivalent of your README.md so that you can put this on your own website.
 
 * [Version @@pkg_version, minimized, 4.4K : http://yourwebsite.com/@@minimized_file](http://yourwebsite.com/@@minimized_file)
 * [Version @@pkg_version, un-minimized, 13K : http://yourwebsite.com/@@unminimized_file](http://yourwebsite.com/@@unminimized_file)
+
+## Usage ##
+
+### Browser ###
+
+In any web page:
+```html
+<script src="http://yourwebsite.com/@@minimized_file)"></script>
+<script>
+  var NodeModuleWithUnittestsTemplate = require('node-module-with-unittests-template');
+  var example = new NodeModuleWithUnittestsTemplate();
+
+  example.hello();
+</script>
+  ```
+
+### Node.js ###
+
+```js
+var NodeModuleWithUnittestsTemplate = require('./src/node-module-with-unittests-template.js');
+var example = new NodeModuleWithUnittestsTemplate();
+
+example.hello();
+```
