@@ -33,7 +33,6 @@ In this section, we describe what each file does in this template and how you ca
 
 Once everything is installed, you will see a project structure like below:
 
-```
 ├── [Gruntfile.js](#gruntfile-js)                            # File of magic. All grunt tasks are in here.
 ├── README.md                                                # This very file. Gets overwritten by Grunt.
 ├── README.md.copy                                           # The copy of this file. It does not get overwritten.
@@ -57,7 +56,6 @@ Once everything is installed, you will see a project structure like below:
 │   │   └── output.txt                                       # Output of your unittest run from node.
 │   └── unittests                                            # Unittests directory. Add your unittests here.
 │   │   └── dummy-test.js                                    # Dummy js unittest. Provided as an example.
-```
 
 #### ./Gruntfile.js ####
 
