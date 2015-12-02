@@ -1,4 +1,4 @@
-# Node Module with Unittests Template #
+# Node Module with Unittests Template # [![Build Status](https://travis-ci.org/byuksel/node-module-with-unittests-template.svg?branch=master)](https://travis-ci.org/byuksel/node-module-with-unittests-template)
 
 This repository provides scaffolding to promptly bootstrap writing your own node module with unittests.
 The unittests are run both within node environment and on the browser (which can help you determine
@@ -36,6 +36,7 @@ Once everything is installed, you will see a project structure like below:
 ```
 ├── .flowconfig                                       # Config file for flow static type checker.
 ├── .jscsrc                                           # Config file for jscs coding style checker.
+├── .travis.yml                                       # Config file for travis-ci continous integration testing infrastructure.
 ├── Gruntfile.js                                      # File of magic. All grunt tasks are in here.
 ├── README.md                                         # This very file. Gets overwritten by Grunt.
 ├── README.md.copy                                    # Copy of this file. Does not get overwritten.
@@ -64,6 +65,13 @@ Once everything is installed, you will see a project structure like below:
 #### ./.flowconfig ####
 
 Configuration file for flow type checker. Flow is a static type checker which is helpful in catching null dereferences and unintentional type conversions. You can read more about it on [their website](http://http://flowtype.org).
+
+#### ./.jscsrc ####
+
+Configuration file for JSCS coding style checks. We use a modified version of Google JS coding style and full JSDoc3 checks.
+
+#### ./.travis.yml ####
+Wikipedia says "Travis CI is a FOSS, hosted, distributed continuous integration service used to build and test projects hosted at GitHub". I strongly recommend that you connect your node module to Travis-CI through Github to run continuous builds and integration tests. You can read more on [their website](http://travis-ci.org).
 
 #### ./Gruntfile.js ####
 

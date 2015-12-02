@@ -1,4 +1,4 @@
-# Node Module with Unittests Template # ![Build Status](https://secure.travis-ci.org/byuksel/node-module-template-with-unittests.png?branch=master)
+# Node Module with Unittests Template # [![Build Status](https://travis-ci.org/byuksel/node-module-with-unittests-template.svg?branch=master)](https://travis-ci.org/byuksel/node-module-with-unittests-template)
 
 This repository provides scaffolding to promptly bootstrap writing your own node module with unittests.
 The unittests are run both within node environment and on the browser (which can help you determine
