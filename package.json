@@ -69,5 +69,8 @@
     "time-grunt": "^1.2.2",
     "uglify-js": "^2.6.1"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "tonicExample": "var NodeModuleWithUnittestsTemplate = require('node-module-with-unittests-template'); var example = new NodeModuleWithUnittestsTemplate(); example.hello();"
 }
