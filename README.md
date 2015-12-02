@@ -35,6 +35,7 @@ Once everything is installed, you will see a project structure like below:
 
 ```
 ├── .flowconfig                                       # Config file for flow static type checker.
+├── .jscsrc                                           # Config file for jscs coding style checker.
 ├── Gruntfile.js                                      # File of magic. All grunt tasks are in here.
 ├── README.md                                         # This very file. Gets overwritten by Grunt.
 ├── README.md.copy                                    # Copy of this file. Does not get overwritten.
@@ -59,6 +60,7 @@ Once everything is installed, you will see a project structure like below:
 │   └── unittests                                     # Unittests directory. Add your unittests here.
 │   │   └── dummy-test.js                             # Dummy js unittest. Provided as an example.
 ```
+
 #### ./.flowconfig ####
 
 Configuration file for flow type checker. Flow is a static type checker which is helpful in catching null dereferences and unintentional type conversions. You can read more about it on [their website](http://http://flowtype.org).
@@ -138,6 +140,10 @@ Starts a basic web server.
 
 Runs Flow static type checker.
 
+#### jscs ####
+
+Runs the code through jscs for coding style checks. This uses a modified version of Google coding style.
+
 #### jsdoc ####
 
 Creates documentation from src files using jsdoc.
@@ -180,7 +186,7 @@ Gruntfile.js comes with a whole set of custom tasks.
 
 #### browsertest ####
 
-Runs 'clean:tests', 'jshint', 'flow', 'browserify', 'replace:browserified_tests_file', 'connect:server', 'mocha_phantomjs' respectively.
+Runs 'clean:tests', 'jshint', 'jscs', 'flow', 'browserify', 'replace:browserified_tests_file', 'connect:server', 'mocha_phantomjs' respectively.
 
 #### dist ####
 
@@ -192,7 +198,7 @@ Runs 'clean:docs', 'replace:dist', 'markdown', 'jsdoc' respectively.
 
 #### localtest ####
 
-Runs 'clean:tests', 'jshint', 'flow', 'mochaTest' respectively.
+Runs 'clean:tests', 'jshint', 'jscs', 'flow', 'mochaTest' respectively.
 
 #### test ####
 
