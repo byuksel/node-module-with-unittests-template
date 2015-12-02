@@ -1,6 +1,6 @@
 {
   "name": "node-module-with-unittests-template",
-  "version": "0.0.81",
+  "version": "0.0.82",
   "description": "Node-Module-With-Unittests-Template: template for a generic node module with unittests and coverage reports",
   "keywords": [
     "template",
