@@ -73,7 +73,10 @@ Configuration file for flow type checker. Flow is a static type checker which is
 Configuration file for JSCS coding style checks. We use a modified version of Google JS coding style and full JSDoc3 checks.
 
 #### ./.travis.yml ####
-Wikipedia says "Travis CI is a FOSS, hosted, distributed continuous integration service used to build and test projects hosted at GitHub". I strongly recommend that you connect your node module to Travis-CI through Github to run continuous builds and integration tests. You can read more on [their website](http://travis-ci.org).
+
+Wikipedia says "Travis CI is a FOSS, hosted, distributed continuous integration service used to build and test projects hosted at GitHub". I strongly recommend that you connect your node module to Travis-CI through Github to run continuous builds and integration tests.
+
+The generator puts two links to your README.md.template file, one linking an image to a *hypothetical* Travis-CI build task under your own github name. The generator does NOT create this build task. You can sign up with [Travis-CI](http://travis-ci.org) to get this working. You can read more on [their website](http://travis-ci.org).
 
 #### ./Gruntfile.js ####
 
