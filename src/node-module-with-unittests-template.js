@@ -13,7 +13,8 @@ exports = module.exports = NodeModuleWithUnittestsTemplate;
 var Dummy = require('./dummy.js');
 
 /**
- * Constructs a new empty class
+ * Constructs a new empty object.
+ *
  * @constructor
  */
 function NodeModuleWithUnittestsTemplate() {
@@ -21,8 +22,9 @@ function NodeModuleWithUnittestsTemplate() {
 }
 
 /**
- * Simple function
- * @returns {String} returns what sayHello() returns from Dummy.js.
+ * Simple function.
+ *
+ * @returns {string} returns what sayHello() returns from Dummy.js.
  */
 NodeModuleWithUnittestsTemplate.prototype.hello = function() {
   return this.dummyClass.sayhello();
