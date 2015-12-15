@@ -1,3 +1,5 @@
+<img align="right" height="300" src="https://raw.githubusercontent.com/byuksel/node-module-with-unittests-template/master/logo.png">
+
 # Node Module with Unittests Template
 
 [![Build Status](https://travis-ci.org/byuksel/node-module-with-unittests-template.svg?branch=master)](https://travis-ci.org/byuksel/node-module-with-unittests-template)[![npm version](https://badge.fury.io/js/node-module-with-unittests-template.svg)](https://badge.fury.io/js/node-module-with-unittests-template)
@@ -11,8 +13,16 @@ module/library name and version in README.md, and an html version of your README
 
 ## Quick Installation ##
 
-After cloning this scaffolding from github, just type `npm install` and this scaffolding will install
-all the necessary dependencies.
+Type:
+```
+git clone https://github.com/byuksel/node-module-with-unittests-template.git
+```
+This will clone the repo. Change to `node-module-with-unittests`, and type:
+
+```
+npm install
+```
+This will install all the necessary dependencies for this scaffolding.
 
 ## Quick Start ##
 
